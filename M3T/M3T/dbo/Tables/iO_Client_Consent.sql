@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[iO_Client_Consent] (
+    [POL_ID]            INT            IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [POL_IDLINK_CMR]    NVARCHAR (40)  NULL,
+    [POL_IDLINK_RMR]    NVARCHAR (40)  NULL,
+    [POL_TYPE]          NVARCHAR (20)  NULL,
+    [POL_IP_ADDRESS]    NVARCHAR (MAX) NULL,
+    [POL_DATE_ACCEPTED] DATETIME       NULL,
+    [POL_VERSION]       NVARCHAR (20)  NULL,
+    [POL_LINK]          NVARCHAR (MAX) NULL,
+    [POL_STATUS]        BIT            NULL,
+    [POL_LAST_UPDATE]   DATETIME       NULL,
+    [POL_CHANGE_BY]     NVARCHAR (MAX) NULL,
+    CONSTRAINT [PK_iO_Client_Consent] PRIMARY KEY CLUSTERED ([POL_ID] ASC)
+);
+

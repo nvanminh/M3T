@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[iO_Client_IndividualLiabilityMaster] (
+    [CLLm_ID]               VARCHAR (40)  NOT NULL,
+    [CLLm_Ownership]        VARCHAR (40)  NOT NULL,
+    [CLLm_IDLink_Version]   VARCHAR (40)  NULL,
+    [CLLm_IDLink_Sync]      VARCHAR (40)  NULL,
+    [CLLm_IDLink_CMR]       VARCHAR (40)  NULL,
+    [CLLm_IDLink_RSP]       VARCHAR (40)  NULL,
+    [CLLm_IDLink_XLBo]      VARCHAR (40)  NULL,
+    [CLLm_IDLink_XFR]       VARCHAR (40)  NULL,
+    [CLLm_SeqNumber]        INT           IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [CLLm_Type]             INT           NULL,
+    [CLLm_IDUser]           INT           NULL,
+    [CLLm_Value]            FLOAT (53)    NULL,
+    [CLLm_ValuePerYear]     FLOAT (53)    NULL,
+    [CLLm_Maintenance]      FLOAT (53)    NULL,
+    [CLLm_RentBoard]        FLOAT (53)    NULL,
+    [CLLm_Maintenace]       FLOAT (53)    NULL,
+    [CLLm_ChildSupport]     FLOAT (53)    NULL,
+    [CLLm_ValueVerified]    FLOAT (53)    NULL,
+    [CLLm_Other]            FLOAT (53)    NULL,
+    [CLLm_LoanBSB]          VARCHAR (40)  NULL,
+    [CLLm_LoanAccount]      VARCHAR (40)  NULL,
+    [CLLm_PaymentMethod]    VARCHAR (MAX) NULL,
+    [CLLm_CurrentForClient] BIT           NULL,
+    [CLLm_Note]             TEXT          NULL,
+    CONSTRAINT [PK_iO_Client_IndividualLiabilityMaster] PRIMARY KEY CLUSTERED ([CLLm_ID] ASC)
+);
+

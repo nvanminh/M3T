@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[io_Task_Pending_Backup] (
+    [KPD_ID]             VARCHAR (40)   NOT NULL,
+    [KPD_Ownership]      VARCHAR (40)   NOT NULL,
+    [KPD_IDLink_Version] VARCHAR (40)   NULL,
+    [KPD_IDLink_Sync]    VARCHAR (40)   NULL,
+    [KPD_IDLink_Code]    VARCHAR (40)   NULL,
+    [KPD_IDLink_Key]     VARCHAR (40)   NULL,
+    [KPD_IDLink_XTKM]    VARCHAR (40)   NULL,
+    [KPD_IDLink_XLK]     VARCHAR (40)   NULL,
+    [KPD_SeqNumber]      BIGINT         IDENTITY (1, 1) NOT NULL,
+    [KPD_IDUser]         INT            NULL,
+    [KPD_Type]           INT            NULL,
+    [KPD_ProcessOrder]   INT            NULL,
+    [KPD_Detail]         VARCHAR (1024) NULL,
+    [KPD_DateStart]      DATETIME       NULL,
+    [KPD_DateEnd]        DATETIME       NULL,
+    [KPD_DateNext]       DATETIME       NULL,
+    [KPD_DatePrev]       DATETIME       NULL,
+    [KPD_DayStart]       INT            NULL,
+    [KPD_Note]           TEXT           NULL,
+    [KPD_SeqNo]          INT            NULL,
+    [KPD_IDLink_CBD]     VARCHAR (40)   NULL,
+    [KPD_Data]           VARCHAR (40)   NULL,
+    [KPD_IDlink_Class]   VARCHAR (40)   NULL
+);
+

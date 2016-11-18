@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[iO_Control_FormMaster2] (
+    [XFRM_ID]               VARCHAR (100) NOT NULL,
+    [XFRM_Ownership]        VARCHAR (40)  NULL,
+    [XFRM_Version]          VARCHAR (40)  NULL,
+    [XFRM_IDLink_Sync]      VARCHAR (40)  NULL,
+    [XFRM_IDLink_XSCc]      INT           NULL,
+    [XFRM_IDLink_Code]      VARCHAR (40)  NULL,
+    [XFRM_IDLink_ToForm]    VARCHAR (40)  NULL,
+    [XFRM_IDLink_Version]   VARCHAR (40)  NULL,
+    [XFRM_IDLink_SeqNumber] BIGINT        NULL,
+    [XFRM_PathName]         VARCHAR (512) NULL,
+    [XFRM_IDUser]           VARCHAR (512) NULL,
+    [XFRM_Type]             INT           NULL,
+    [XFRM_FormType]         INT           NULL,
+    [XFRM_SeqNo]            INT           NULL,
+    [XFRM_Detail]           VARCHAR (512) NULL,
+    [XFRM_FormName]         VARCHAR (512) NULL,
+    [XFRM_SecurityValue]    INT           NULL,
+    [XFRM_DisplayForm]      BIT           NULL,
+    [XFRM_CommonForm]       BIT           NULL,
+    [XFRM_CommonType]       INT           NULL,
+    [XFRM_BarImage]         TEXT          NULL,
+    [XFRM_Note]             TEXT          NULL,
+    CONSTRAINT [iO_Control_FormMaster2_PrimaryKey] PRIMARY KEY CLUSTERED ([XFRM_ID] ASC)
+);
+

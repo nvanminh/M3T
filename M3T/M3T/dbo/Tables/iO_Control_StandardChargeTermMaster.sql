@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[iO_Control_StandardChargeTermMaster] (
+    [XSCTm_ID]                  VARCHAR (40)  NOT NULL,
+    [XSCTm_Ownership]           VARCHAR (40)  NULL,
+    [XSCTm_IDLink_Version]      VARCHAR (40)  NULL,
+    [XSCTm_IDLink_Sync]         VARCHAR (40)  NULL,
+    [XSCTm_IDLink_XSCc]         INT           NULL,
+    [XSCTm_IDLink_Code]         VARCHAR (40)  NULL,
+    [XSCTm_IDLink_Level]        VARCHAR (40)  NULL,
+    [XSCTm_IDLink_XLK]          VARCHAR (40)  NULL,
+    [XSCTm_IDLink_CMR]          VARCHAR (40)  NULL,
+    [XSCTm_Detail]              VARCHAR (512) NULL,
+    [XSCTm_Type]                INT           NULL,
+    [XSCTm_IDUser]              INT           NULL,
+    [XSCTm_IDFilingNumber]      INT           NULL,
+    [XSCTm_IDFilingText]        VARCHAR (40)  NULL,
+    [XSCTm_DateStart]           DATETIME      NULL,
+    [XSCTm_DateEffective]       DATETIME      NULL,
+    [XSCTm_DateEnd]             DATETIME      NULL,
+    [XSCTm_SecurityValue]       INT           NULL,
+    [XSCTm_Note]                TEXT          NULL,
+    [XSCTm_IDLink_XRRm]         VARCHAR (40)  NULL,
+    [XSCTm_PrepaymentPrivilege] FLOAT (53)    NULL,
+    [XSCTm_PaymentIncrease]     FLOAT (53)    NULL,
+    CONSTRAINT [PK_iO_Control_StandardChargeTermMaster] PRIMARY KEY CLUSTERED ([XSCTm_ID] ASC) WITH (FILLFACTOR = 85)
+);
+

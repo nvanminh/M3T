@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[iO_DNB_ResponseAddress] (
+    [DNBa_ID]                    VARCHAR (40) NOT NULL,
+    [DNBa_Ownership]             VARCHAR (40) NULL,
+    [DNBa_IDLink_Version]        VARCHAR (40) NULL,
+    [DNBa_IDLink_SCM]            VARCHAR (40) NULL,
+    [DNBa_IDLink_DNBmr]          VARCHAR (40) NULL,
+    [DNBa_IDLink_Sync]           VARCHAR (40) NULL,
+    [DNBa_SeqNumber]             BIGINT       NULL,
+    [DNBa_Type]                  VARCHAR (50) NULL,
+    [DNBa_AddressLine]           VARCHAR (50) NULL,
+    [DNBa_Locality]              VARCHAR (50) NULL,
+    [DNBa_State]                 VARCHAR (50) NULL,
+    [DNBa_Postcode]              VARCHAR (50) NULL,
+    [DNBa_Surname]               VARCHAR (50) NULL,
+    [DNBa_GivenName1]            VARCHAR (50) NULL,
+    [DNBa_GivenName2]            VARCHAR (50) NULL,
+    [DNBa_TraceMatch]            VARCHAR (50) NULL,
+    [DNBa_AlphaScore]            VARCHAR (50) NULL,
+    [DNBa_ScorePoints]           VARCHAR (50) NULL,
+    [DNBa_MaxScorePoints]        VARCHAR (50) NULL,
+    [DNBa_ScoreWeightPercentage] VARCHAR (50) NULL,
+    [DNBa_ScorePercentage]       VARCHAR (50) NULL,
+    [DNBa_FirstSpotDate]         VARCHAR (50) NULL,
+    [DNBa_LOS]                   VARCHAR (50) NULL,
+    [DNBa_TransactionDate]       VARCHAR (50) NULL,
+    CONSTRAINT [PK_iO_DNB_ResponseAddress] PRIMARY KEY CLUSTERED ([DNBa_ID] ASC) WITH (FILLFACTOR = 85)
+);
+

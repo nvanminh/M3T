@@ -1,0 +1,6 @@
+﻿GRANT CONNECT TO [sa2];
+
+
+GO
+GRANT CONNECT TO [money3];
+

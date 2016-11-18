@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[iO_DNB_ResponsePhoneValidation] (
+    [DNBpv_ID]                    VARCHAR (40) NOT NULL,
+    [DNBpv_Ownership]             VARCHAR (40) NULL,
+    [DNBpv_IDLink_Version]        VARCHAR (40) NULL,
+    [DNBpv_IDLink_SCM]            VARCHAR (40) NULL,
+    [DNBpv_IDLink_DNBmr]          VARCHAR (40) NULL,
+    [DNBpv_IDLink_Sync]           VARCHAR (40) NULL,
+    [DNBpv_SeqNumber]             BIGINT       NULL,
+    [DNBpv_SegID]                 VARCHAR (50) NULL,
+    [DNBpv_ValidationType]        VARCHAR (50) NULL,
+    [DNBpv_Type]                  VARCHAR (50) NULL,
+    [DNBpv_Address]               VARCHAR (50) NULL,
+    [DNBpv_Locality]              VARCHAR (50) NULL,
+    [DNBpv_State]                 VARCHAR (50) NULL,
+    [DNBpv_PostCode]              VARCHAR (50) NULL,
+    [DNBpv_Surname]               VARCHAR (50) NULL,
+    [DNBpv_Name]                  VARCHAR (50) NULL,
+    [DNBpv_NameOther]             VARCHAR (50) NULL,
+    [DNBpv_TraceMatch]            VARCHAR (50) NULL,
+    [DNBpv_PhoneNumber]           VARCHAR (50) NULL,
+    [DNBpv_AlphaScore]            VARCHAR (50) NULL,
+    [DNBpv_ScorePoints]           VARCHAR (50) NULL,
+    [DNBpv_MaxScorePoints]        VARCHAR (50) NULL,
+    [DNBpv_ScoreWeightPercentage] VARCHAR (50) NULL,
+    [DNBpv_ScorePercentage]       VARCHAR (50) NULL,
+    CONSTRAINT [PK_iO_DNB_ResponsePhoneValidation] PRIMARY KEY CLUSTERED ([DNBpv_ID] ASC) WITH (FILLFACTOR = 85)
+);
+

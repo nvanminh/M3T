@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[iO_FCX_Deal_AgentProfile] (
+    [FCXda_ID]                       VARCHAR (40) NOT NULL,
+    [FCXda_IDLink_Ownership]         VARCHAR (40) NULL,
+    [FCXda_IDLink_Version]           VARCHAR (40) NULL,
+    [FCXda_IDLink_Sync]              VARCHAR (40) NULL,
+    [FCXda_IDLink_Code]              VARCHAR (40) NULL,
+    [FCXda_IDLink_SCM]               VARCHAR (50) NULL,
+    [FCXda_IDLink_FCXd]              VARCHAR (50) NULL,
+    [FCXda_SeqNumber]                BIGINT       IDENTITY (1, 1) NOT NULL,
+    [FCXda_FirmCode]                 VARCHAR (50) NULL,
+    [FCXda_LegacyOfficeID]           VARCHAR (50) NULL,
+    [FCXda_LegacySystem]             VARCHAR (50) NULL,
+    [FCXda_LegacyUserID]             VARCHAR (50) NULL,
+    [FCXda_LegacyRegistrationNumber] VARCHAR (50) NULL,
+    [FCXda_ProfileStatus]            VARCHAR (50) NULL,
+    [FCXda_UserProfileID]            VARCHAR (50) NULL,
+    [FCXda_UserType]                 VARCHAR (50) NULL,
+    [FCXda_ContactSalutation]        VARCHAR (50) NULL,
+    [FCXda_ContactFirstName]         VARCHAR (50) NULL,
+    [FCXda_ContactMiddleName]        VARCHAR (50) NULL,
+    [FCXda_ContactLastName]          VARCHAR (50) NULL,
+    [FCXda_ContactEmailAddress]      VARCHAR (50) NULL,
+    [FCXda_Language]                 VARCHAR (50) NULL,
+    [FCXda_PreferredContact]         VARCHAR (50) NULL
+);
+

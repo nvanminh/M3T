@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[iO_Product_TransactionReturn_EFTCan] (
+    [RTRec_ID]             VARCHAR (40)  NOT NULL,
+    [RTRec_Ownership]      VARCHAR (40)  NULL,
+    [RTRec_IDLink_Version] VARCHAR (40)  NULL,
+    [RTRec_IDLink_Sync]    VARCHAR (40)  NULL,
+    [RTRec_IDLink_Batch]   VARCHAR (40)  NULL,
+    [RTRec_IDLink_RMR]     VARCHAR (40)  NULL,
+    [RTRec_IDLink_RTM]     VARCHAR (40)  NULL,
+    [RTRec_SeqNumber]      BIGINT        NULL,
+    [RTRec_ClientNumber]   VARCHAR (15)  NULL,
+    [RTRec_TransactionID]  BIGINT        NULL,
+    [RTRec_ExternalRef]    VARCHAR (100) NULL,
+    [RTRec_ReturnCode]     VARCHAR (50)  NULL,
+    [RTRec_DateC]          DATETIME      NULL,
+    [RTRec_DateE]          DATETIME      NULL,
+    [RTRec_Amount]         MONEY         NULL,
+    [RTRec_Type]           CHAR (2)      NULL,
+    [RTRec_CustomerNumber] VARCHAR (MAX) NULL,
+    [RTRec_CustomerName]   VARCHAR (MAX) NULL,
+    [RTRec_Account]        VARCHAR (MAX) NULL,
+    [RTRec_BankNum]        VARCHAR (MAX) NULL,
+    [RTRec_TransitNum]     VARCHAR (MAX) NULL,
+    [RTRec_Exception]      BIT           NULL,
+    CONSTRAINT [PK_iO_Product_TransactionReturn_EFTCan] PRIMARY KEY CLUSTERED ([RTRec_ID] ASC) WITH (FILLFACTOR = 85)
+);
+

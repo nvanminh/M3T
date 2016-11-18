@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[iO_Test_MasterReference] (
+    [TSTmr_ID]                VARCHAR (40)  NOT NULL,
+    [TSTmr_Ownership]         VARCHAR (40)  NULL,
+    [TSTmr_IDLink_Version]    VARCHAR (40)  NULL,
+    [TSTmr_IDLink_Sync]       VARCHAR (40)  NULL,
+    [TSTmr_IDLink_TSTc]       VARCHAR (40)  NULL,
+    [TSTmr_IDLink_RMR]        VARCHAR (40)  NULL,
+    [TSTmr_SeqNumber]         BIGINT        NULL,
+    [TSTmr_TestType]          INT           NULL,
+    [TSTmr_TestFileLocation]  VARCHAR (255) NULL,
+    [TSTmr_DealFileLocation]  VARCHAR (255) NULL,
+    [TSTmr_TotalTests]        INT           NULL,
+    [TSTmr_PassedTests]       INT           NULL,
+    [TSTmr_FailedTests]       INT           NULL,
+    [TSTmr_StartTime]         DATETIME      NULL,
+    [TSTmr_EndTime]           DATETIME      NULL,
+    [TSTmr_Note]              TEXT          NULL,
+    [TSTmr_Set]               VARCHAR (40)  NULL,
+    [TSTmr_PreExecutionStep]  INT           NULL,
+    [TSTmr_PostExecutionStep] INT           NULL,
+    [TSTmr_ExecuteTests]      BIT           NULL,
+    [TSTmr_IDLink_TSTct]      VARCHAR (40)  NULL,
+    CONSTRAINT [PK_iO_Test_MasterReference] PRIMARY KEY CLUSTERED ([TSTmr_ID] ASC) WITH (FILLFACTOR = 85)
+);
+

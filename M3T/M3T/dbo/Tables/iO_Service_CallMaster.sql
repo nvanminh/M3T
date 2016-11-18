@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[iO_Service_CallMaster] (
+    [SCM_ID]                         VARCHAR (40)  NOT NULL,
+    [SCM_Ownership]                  VARCHAR (40)  NULL,
+    [SCM_IDLink_Version]             VARCHAR (40)  NULL,
+    [SCM_IDLink_Sync]                VARCHAR (40)  NULL,
+    [SCM_IDLink_XSCM]                VARCHAR (40)  NULL,
+    [SCM_IDLink_Key1]                VARCHAR (40)  NULL,
+    [SCM_IDLink_Key2]                VARCHAR (40)  NULL,
+    [SCM_IDLink_SCM_PreviousAttempt] VARCHAR (40)  NULL,
+    [SCM_SeqNumber]                  BIGINT        IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [SCM_RequestTime]                DATETIME      NULL,
+    [SCM_RequestURI]                 VARCHAR (255) NULL,
+    [SCM_RequestUser]                VARCHAR (255) NULL,
+    [SCM_RequestPass]                VARCHAR (255) NULL,
+    [SCM_RequestContentType]         VARCHAR (255) NULL,
+    [SCM_RequestUserAgent]           VARCHAR (255) NULL,
+    [SCM_RequestMethod]              VARCHAR (255) NULL,
+    [SCM_DataShareState]             TEXT          NULL,
+    [SCM_RequestXMLTemplate]         TEXT          NULL,
+    [SCM_RequestXMLMerged]           TEXT          NULL,
+    [SCM_ResponseXMLTemplate]        TEXT          NULL,
+    [SCM_ResponseXMLData]            TEXT          NULL,
+    [SCM_ResponseXMLPayload]         TEXT          NULL,
+    [SCM_Culture]                    INT           NULL,
+    CONSTRAINT [PK_iO_Service_CallMaster] PRIMARY KEY CLUSTERED ([SCM_ID] ASC) WITH (FILLFACTOR = 85)
+);
+

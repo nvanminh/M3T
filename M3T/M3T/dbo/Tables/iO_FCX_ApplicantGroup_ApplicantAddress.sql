@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[iO_FCX_ApplicantGroup_ApplicantAddress] (
+    [FCXaaa_ID]                    VARCHAR (40) NOT NULL,
+    [FCXaaa_IDLink_Ownership]      VARCHAR (40) NULL,
+    [FCXaaa_IDLink_Version]        VARCHAR (40) NULL,
+    [FCXaaa_IDLink_Sync]           VARCHAR (40) NULL,
+    [FCXaaa_IDLink_Code]           VARCHAR (40) NULL,
+    [FCXaaa_IDLink_SCM]            VARCHAR (50) NULL,
+    [FCXaaa_IDLink_FCXaa]          VARCHAR (50) NULL,
+    [FCXaaa_SeqNumber]             BIGINT       IDENTITY (1, 1) NOT NULL,
+    [FCXaaa_UnitNumber]            VARCHAR (50) NULL,
+    [FCXaaa_StreetNumber]          VARCHAR (50) NULL,
+    [FCXaaa_StreetName]            VARCHAR (50) NULL,
+    [FCXaaa_StreetType]            VARCHAR (50) NULL,
+    [FCXaaa_StreetDirection]       VARCHAR (50) NULL,
+    [FCXaaa_City]                  VARCHAR (50) NULL,
+    [FCXaaa_Province]              VARCHAR (50) NULL,
+    [FCXaaa_InternationalPostcode] VARCHAR (50) NULL,
+    [FCXaaa_PostalFSA]             VARCHAR (50) NULL,
+    [FCXaaa_PostalLDU]             VARCHAR (50) NULL,
+    [FCXaaa_Country]               VARCHAR (50) NULL,
+    [FCXaaa_AddressType]           VARCHAR (50) NULL,
+    [FCXaaa_MonthsAtAddress]       VARCHAR (50) NULL,
+    [FCXaaa_ResidentialStatus]     VARCHAR (50) NULL,
+    [FCXaaa_RentPaymentAmount]     VARCHAR (50) NULL
+);
+
