@@ -987,25 +987,6 @@
     <Build Include="dbo\Functions\XMLWordReplace.sql" />
     <Build Include="WebPortal\Functions\Decrypt.sql" />
     <Build Include="WebPortal\Functions\Encrypt.sql" />
-    <Build Include="dbo\Functions\BlockDistance.sql" />
-    <Build Include="dbo\Functions\ChapmanLengthDeviation.sql" />
-    <Build Include="dbo\Functions\ChapmanMeanLength.sql" />
-    <Build Include="dbo\Functions\CosineSimilarity.sql" />
-    <Build Include="dbo\Functions\DiceSimilarity.sql" />
-    <Build Include="dbo\Functions\EuclideanDistance.sql" />
-    <Build Include="dbo\Functions\JaccardSimilarity.sql" />
-    <Build Include="dbo\Functions\Jaro.sql" />
-    <Build Include="dbo\Functions\JaroWinkler.sql" />
-    <Build Include="dbo\Functions\Levenstein.sql" />
-    <Build Include="dbo\Functions\MatchingCoefficient.sql" />
-    <Build Include="dbo\Functions\MongeElkan.sql" />
-    <Build Include="dbo\Functions\NeedlemanWunch.sql" />
-    <Build Include="dbo\Functions\OverlapCoefficient.sql" />
-    <Build Include="dbo\Functions\QGramsDistance.sql" />
-    <Build Include="dbo\Functions\SmithWaterman.sql" />
-    <Build Include="dbo\Functions\SmithWatermanGotoh.sql" />
-    <Build Include="dbo\Functions\SmithWatermanGotohWindowedAffine.sql" />
-    <Build Include="dbo\Functions\CompareStringMetrics.sql" />
     <Build Include="dbo\Functions\GetLastDateOfNoteTbl.sql" />
     <Build Include="dbo\Functions\GetLastDateOfSuccessfulPaymentTbl.sql" />
     <Build Include="dbo\Functions\GetNewReceivedTbl.sql" />
@@ -1094,15 +1075,6 @@
     <Build Include="dbo\Stored Procedures\sp_M3_ActivityReport_No.sql" />
     <Build Include="dbo\Stored Procedures\sp_tony_settlement_date.sql" />
     <Build Include="dbo\Stored Procedures\sp_WhoIsActive.sql" />
-    <Build Include="dbo\Stored Procedures\spr_checkFullDuplicateClients.sql" />
-    <Build Include="dbo\Stored Procedures\spr_ClientsComparator.sql" />
-    <Build Include="dbo\Stored Procedures\spr_ClientsComparator_Name_DOB.sql" />
-    <Build Include="dbo\Stored Procedures\spr_ETL_ComparatorClients_M3.sql" />
-    <Build Include="dbo\Stored Procedures\spr_ETL_FullComparatorClients_M3.sql" />
-    <Build Include="dbo\Stored Procedures\spr_ETLTranformClientInfo.sql" />
-    <Build Include="dbo\Stored Procedures\spr_ETLTranformClientInfo_Name_DOB.sql" />
-    <Build Include="dbo\Stored Procedures\spr_ETLTranformClientInfo_removeAddress.sql" />
-    <Build Include="dbo\Stored Procedures\spr_FullClientsComparator.sql" />
     <Build Include="dbo\Stored Procedures\spr_GetLoanByRoot.sql" />
     <Build Include="dbo\Stored Procedures\spr_GroupRootClient.sql" />
     <Build Include="dbo\Stored Procedures\spr_IdentifyDuplicateClients.sql" />
@@ -1134,26 +1106,6 @@
     <Build Include="Security\Permissions.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assemblies\SimMetrics.dll" />
-    <None Include="Assemblies\TextFunctions.dll" />
     <None Include="M3.Test.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SimMetrics">
-      <HintPath>Assemblies\SimMetrics.dll</HintPath>
-      <SqlAssemblyName>SimMetrics</SqlAssemblyName>
-      <IsModelAware>True</IsModelAware>
-      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
-      <SqlOwnerName>dbo</SqlOwnerName>
-      <SqlPermissionSet>SAFE</SqlPermissionSet>
-    </Reference>
-    <Reference Include="TextFunctions">
-      <HintPath>Assemblies\TextFunctions.dll</HintPath>
-      <SqlAssemblyName>TextFunctions</SqlAssemblyName>
-      <IsModelAware>True</IsModelAware>
-      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
-      <SqlOwnerName>dbo</SqlOwnerName>
-      <SqlPermissionSet>SAFE</SqlPermissionSet>
-    </Reference>
   </ItemGroup>
 </Project>
